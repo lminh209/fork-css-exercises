@@ -8,20 +8,20 @@ body {
   font-weight: 800;
 }
 
-.small-para {
+.para.small-para {
   font-size: 14px;
   font-weight: 800;
-}
+} /* Add 1 class selector (.para) to rule */
 
 .para {
   font-size: 22px;
 }
 
-.confirm {
-  background: green;
+.button.confirm {
+  background: green; /* Orig. conflicting rule */
   color: white;
   font-weight: bold;
-} 
+} /* Add 1 selector (.button) to rule */
 
 .button {
   background-color: rgb(255, 255, 255);
@@ -29,14 +29,17 @@ body {
   font-size: 20px;
 }
 
-.child {
+
+div.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
-}
+} /* Add 2 selectors (div.text) to rule */
+
 
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
 }
+
